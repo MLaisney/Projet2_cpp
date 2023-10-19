@@ -16,7 +16,7 @@ class Quincy : public Personnage
 
     public:
         Quincy(std::string nom);
-        void attaquer(Personnage* cible, int degats); 
+        void attaquer(Personnage *cible);
         void recevoirDegats(int degats);
         void utiliserHeilingPfeil(Personnage* cible);
         void utiliserGritz(Personnage* cible);
