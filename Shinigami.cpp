@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 
+// Initialisation des dégats et des temps de recharge des capacités
 Shinigami::Shinigami(std::string nom) : Personnage(nom, 2000)
 {
     srand(time(0));
@@ -14,6 +15,7 @@ Shinigami::Shinigami(std::string nom) : Personnage(nom, 2000)
     tempsRechargeBankai = rand() % 4 + 1;
 }
 
+// Choix de la capacité à choisir
 void Shinigami::attaquer(Personnage* cible, int capacite) 
 {
     switch (capacite) 
@@ -25,12 +27,14 @@ void Shinigami::attaquer(Personnage* cible, int capacite)
     }
 }
 
+// Fonction en mode défense
 void Shinigami::recevoirDegats(int degats)
 {
     pointsDeVie -= degats;
     if (pointsDeVie < 0) pointsDeVie = 0;
 }
 
+// Fonction d'utilisation du Zanpakuto
 void Shinigami::utiliserZanpakuto(Personnage* cible)
 {
     if (tempsRechargeZanpakuto > 0)
@@ -44,6 +48,7 @@ void Shinigami::utiliserZanpakuto(Personnage* cible)
     }
 }
 
+// Fonction d'utilisation du Shikaie
 void Shinigami::utiliserShikaie(Personnage* cible)
 {
     if (tempsRechargeShikaie > 0)
@@ -57,6 +62,7 @@ void Shinigami::utiliserShikaie(Personnage* cible)
     }
 }
 
+// Fonction d'utilisation du Bankai
 void Shinigami::utiliserBankai(Personnage* cible)
 {
     if (tempsRechargeBankai > 0)
