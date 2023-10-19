@@ -33,5 +33,9 @@ int main()
         std::cout << "Capacités du Shinigami : \n";
         std::cout << "1. Zanpakuto\n2. Shikaie\n3. Bankai\nChoisissez une capacité (1-3) : ";
         std::cin >> capaciteShinigami;
-
+        
+        // Quincy choisit une cible et une capacité aléatoirement
+        int cibleQuincy = rand() % equipeQuincys.size();
+        uryu.attaquer(equipeShinigamis[0]);
+        jugram.attaquer(equipeShinigamis[0]);
 }
