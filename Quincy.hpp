@@ -3,6 +3,7 @@
 
 #include "Personnage.hpp"
 
+// Création de la classe fille Quincy
 class Quincy : public Personnage
 {
     private:
