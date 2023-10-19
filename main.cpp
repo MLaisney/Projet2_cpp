@@ -3,5 +3,5 @@
 #include <cstdlib>
 #include <ctime>
 
-#include "Shinigami.h"
-#include "Quincy.h"
+#include "Shinigami.hpp"
+#include "Quincy.hpp"
