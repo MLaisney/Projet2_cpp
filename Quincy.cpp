@@ -26,3 +26,9 @@ void Quincy::attaquer(Personnage* cible)
         default: std::cout << "Capacité invalide.\n";
     }
 }
+
+void Quincy::recevoirDegats(int degats)
+{
+    pointsDeVie -= degats;
+    if (pointsDeVie < 0) pointsDeVie = 0;
+}
