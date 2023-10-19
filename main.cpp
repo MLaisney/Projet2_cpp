@@ -61,5 +61,16 @@ int main()
             break;
         }
     }
+    
+    // Annonce du vainqueur
+    if (shinigami.estEnVie())
+    {
+        std::cout << "Les Shinigamis remportent la victoire !\n";
+    }
+    else
+    {
+        std::cout << "Les Quincy remportent la victoire !\n";
+    }
 
+    return 0;
 }
