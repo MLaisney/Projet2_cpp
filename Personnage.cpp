@@ -7,3 +7,8 @@ bool Personnage::estEnVie()
 {
     return pointsDeVie > 0;
 }
+
+std::string Personnage::getnom()
+{
+    return nom;
+}
