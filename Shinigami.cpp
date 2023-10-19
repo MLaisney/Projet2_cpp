@@ -24,3 +24,9 @@ void Shinigami::attaquer(Personnage* cible, int capacite)
         default: std::cout << "Capacité invalide.\n";
     }
 }
+
+void Shinigami::recevoirDegats(int degats)
+{
+    pointsDeVie -= degats;
+    if (pointsDeVie < 0) pointsDeVie = 0;
+}
