@@ -3,6 +3,7 @@
 
 #include <string>
 
+// Création de la classe mère Personnage
 class Personnage
 {
     protected:
