@@ -25,4 +25,13 @@ int main()
     // Initialisation des équipes
     std::vector<Personnage*> equipeShinigamis = {&shinigami};
     std::vector<Personnage*> equipeQuincys = {&uryu, &jugram};
+
+    while (true)
+    {
+        // Shinigami choisit une capacité
+        int capaciteShinigami;
+        std::cout << "Capacités du Shinigami : \n";
+        std::cout << "1. Zanpakuto\n2. Shikaie\n3. Bankai\nChoisissez une capacité (1-3) : ";
+        std::cin >> capaciteShinigami;
+
 }
