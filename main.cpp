@@ -38,4 +38,9 @@ int main()
         int cibleQuincy = rand() % equipeQuincys.size();
         uryu.attaquer(equipeShinigamis[0]);
         jugram.attaquer(equipeShinigamis[0]);
+
+        // Combat Shinigami vs Quincy
+        equipeShinigamis[0]->attaquer(equipeQuincys[cibleQuincy], capaciteShinigami);
+
+
 }
