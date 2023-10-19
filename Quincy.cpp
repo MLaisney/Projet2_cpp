@@ -45,3 +45,16 @@ void Quincy::utiliserHeilingPfeil(Personnage* cible)
         tempsRechargeHeilingPfeil = 3; // Temps de recharge
     }
 }
+
+void Quincy::utiliserGritz(Personnage* cible)
+{
+    if (tempsRechargeGritz > 0)
+    {
+        std::cout << "Le Gritz est en recharge.\n";
+    }
+    else
+    {
+        cible->recevoirDegats(gritzDegats);
+        tempsRechargeGritz = 2; // Temps de recharge
+    }
+}
