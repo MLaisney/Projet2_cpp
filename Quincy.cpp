@@ -32,3 +32,16 @@ void Quincy::recevoirDegats(int degats)
     pointsDeVie -= degats;
     if (pointsDeVie < 0) pointsDeVie = 0;
 }
+
+void Quincy::utiliserHeilingPfeil(Personnage* cible)
+{
+    if (tempsRechargeHeilingPfeil > 0)
+    {
+        std::cout << "Le Heiling Pfeil est en recharge.\n";
+    }
+    else
+    {
+        cible->recevoirDegats(heilingPfeilDegats);
+        tempsRechargeHeilingPfeil = 3; // Temps de recharge
+    }
+}
