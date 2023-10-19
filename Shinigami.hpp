@@ -3,6 +3,7 @@
 
 #include "Personnage.hpp"
 
+// Création de la classe fille Shinigami
 class Shinigami : public Personnage
 {
     private:
