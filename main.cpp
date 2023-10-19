@@ -42,5 +42,8 @@ int main()
         // Combat Shinigami vs Quincy
         equipeShinigamis[0]->attaquer(equipeQuincys[cibleQuincy], capaciteShinigami);
 
+         // Vérification des états de vie
+        bool shinigamiEnVie = shinigami.estEnVie();
+        bool quincyEnVie = false;
 
 }
