@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 
+// Initialisation des dégats et des temps de recharge des capacités
 Quincy::Quincy(std::string nom) : Personnage(nom, 1000)
 {
     srand(time(0));
@@ -14,6 +15,7 @@ Quincy::Quincy(std::string nom) : Personnage(nom, 1000)
     tempsRechargeSklaveti = rand() % 4 + 1;
 }
 
+// Choix de la capacité à utiliser
 void Quincy::attaquer(Personnage* cible)
 {
     int capacite = rand() % 3 + 1; // Choix aléatoire de la capacité (entre 1 et 3)
@@ -27,12 +29,14 @@ void Quincy::attaquer(Personnage* cible)
     }
 }
 
+// Fonction en mode défense
 void Quincy::recevoirDegats(int degats)
 {
     pointsDeVie -= degats;
     if (pointsDeVie < 0) pointsDeVie = 0;
 }
 
+// Fonction d'utilisation du Heiling Pfeil
 void Quincy::utiliserHeilingPfeil(Personnage* cible)
 {
     if (tempsRechargeHeilingPfeil > 0)
@@ -46,6 +50,7 @@ void Quincy::utiliserHeilingPfeil(Personnage* cible)
     }
 }
 
+// Fonction d'utilisation du Gritz
 void Quincy::utiliserGritz(Personnage* cible)
 {
     if (tempsRechargeGritz > 0)
@@ -59,6 +64,7 @@ void Quincy::utiliserGritz(Personnage* cible)
     }
 }
 
+// Fonction d'utilisation du Sklaveti
 void Quincy::utiliserSklaveti(Personnage* cible)
 {
     if (tempsRechargeSklaveti > 0)
