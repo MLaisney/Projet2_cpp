@@ -30,3 +30,16 @@ void Shinigami::recevoirDegats(int degats)
     pointsDeVie -= degats;
     if (pointsDeVie < 0) pointsDeVie = 0;
 }
+
+void Shinigami::utiliserZanpakuto(Personnage* cible)
+{
+    if (tempsRechargeZanpakuto > 0)
+    {
+        std::cout << "Le Zanpakuto est en recharge.\n";
+    }
+    else
+    {
+        cible->recevoirDegats(zanpakutoDegats);
+        tempsRechargeZanpakuto = 3; // Temps de recharge
+    }
+}
