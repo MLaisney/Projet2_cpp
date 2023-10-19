@@ -10,7 +10,7 @@ bool Personnage::estEnVie()
 }
 
 // Fonction pour initialisation du nom du personnage
-std::string Personnage::getnom()
+std::string Personnage::getNom()
 {
     return nom;
 }

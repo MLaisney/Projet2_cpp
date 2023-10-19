@@ -15,6 +15,7 @@ class Personnage
         virtual void attaquer(Personnage* cible, int degats) = 0;
         virtual void recevoirDegats(int degats) = 0;
         bool estEnVie();
+        std::string getNom();
 };
 
 #endif
