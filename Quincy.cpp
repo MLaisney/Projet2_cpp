@@ -4,7 +4,7 @@
 #include <ctime>
 
 // Initialisation des dégats et des temps de recharge des capacités
-Quincy::Quincy(std::string nom) : Personnage(nom, 1000)
+Quincy::Quincy(std::string nom) : Personnage(Uryu, Jugram, 1000)
 {
     srand(time(0));
     heilingPfeilDegats = rand() % 500 + 500;
