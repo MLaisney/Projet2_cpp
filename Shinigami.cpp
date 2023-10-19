@@ -43,3 +43,16 @@ void Shinigami::utiliserZanpakuto(Personnage* cible)
         tempsRechargeZanpakuto = 3; // Temps de recharge
     }
 }
+
+void Shinigami::utiliserShikaie(Personnage* cible)
+{
+    if (tempsRechargeShikaie > 0)
+    {
+        std::cout << "Le Shikaie est en recharge.\n";
+    }
+    else
+    {
+        cible->recevoirDegats(shikaieDegats);
+        tempsRechargeShikaie = 2; // Temps de recharge
+    }
+}
