@@ -14,3 +14,13 @@ Shinigami::Shinigami(std::string nom) : Personnage(nom, 2000)
     tempsRechargeBankai = rand() % 4 + 1;
 }
 
+void Shinigami::attaquer(Personnage* cible, int capacite) 
+{
+    switch (capacite) 
+    {
+        case 1: utiliserZanpakuto(cible); break;
+        case 2: utiliserShikaie(cible); break;
+        case 3: utiliserBankai(cible); break;
+        default: std::cout << "Capacité invalide.\n";
+    }
+}
