@@ -6,3 +6,7 @@
 #include "Shinigami.hpp"
 #include "Quincy.hpp"
 
+int main()
+{
+    
+}
