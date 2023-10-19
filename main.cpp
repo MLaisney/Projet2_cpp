@@ -54,5 +54,12 @@ int main()
                 break;
             }
         }
+        
+        // Si l'un des camps n'a plus de membres en vie, le combat s'arrête
+        if (!shinigamiEnVie || !quincyEnVie)
+        {
+            break;
+        }
+    }
 
 }
