@@ -58,3 +58,16 @@ void Quincy::utiliserGritz(Personnage* cible)
         tempsRechargeGritz = 2; // Temps de recharge
     }
 }
+
+void Quincy::utiliserSklaveti(Personnage* cible)
+{
+    if (tempsRechargeSklaveti > 0)
+    {
+        std::cout << "Le Sklaveti est en recharge.\n";
+    }
+    else
+    {
+        cible->recevoirDegats(sklavetiDegats);
+        tempsRechargeSklaveti = 4; // Temps de recharge
+    }
+}
