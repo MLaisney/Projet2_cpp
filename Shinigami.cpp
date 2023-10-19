@@ -56,3 +56,16 @@ void Shinigami::utiliserShikaie(Personnage* cible)
         tempsRechargeShikaie = 2; // Temps de recharge
     }
 }
+
+void Shinigami::utiliserBankai(Personnage* cible)
+{
+    if (tempsRechargeBankai > 0)
+    {
+        std::cout << "Le Bankai est en recharge.\n";
+    }
+    else
+    {
+        cible->recevoirDegats(bankaiDegats);
+        tempsRechargeBankai = 4; // Temps de recharge
+    }
+}
