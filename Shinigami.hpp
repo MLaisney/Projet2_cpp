@@ -1,6 +1,9 @@
 #ifndef SHINIGAMI_H
 #define SHINIGAMI_H
 
+#include <iostream>
+#include <string>
+
 #include "Personnage.hpp"
 
 using namespace std;

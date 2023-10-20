@@ -1,6 +1,9 @@
 #ifndef QUINCY_H
 #define QUINCY_H
 
+#include <iostream>
+#include <string>
+
 #include "Personnage.hpp"
 
 using namespace std;
