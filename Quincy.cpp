@@ -3,8 +3,10 @@
 #include <cstdlib>
 #include <ctime>
 
+using namespace std;
+
 // Initialisation des dégats et des temps de recharge des capacités
-Quincy::Quincy(std::string nom) : Personnage(nom, 1000)
+Quincy::Quincy(string nom) : Personnage(nom, 1000)
 {
     srand(time(0));
     heilingPfeilDegats = rand() % 500 + 500;
@@ -25,7 +27,7 @@ void Quincy::attaquer(Personnage* cible)
         case 1: utiliserHeilingPfeil(cible); break;
         case 2: utiliserGritz(cible); break;
         case 3: utiliserSklaveti(cible); break;
-        default: std::cout << "Capacité invalide.\n";
+        default: cout << "Capacité invalide.\n";
     }
 }
 
@@ -41,7 +43,7 @@ void Quincy::utiliserHeilingPfeil(Personnage* cible)
 {
     if (tempsRechargeHeilingPfeil > 0)
     {
-        std::cout << "Le Heiling Pfeil est en recharge.\n";
+        cout << "Le Heiling Pfeil est en recharge.\n";
     }
     else
     {
@@ -55,7 +57,7 @@ void Quincy::utiliserGritz(Personnage* cible)
 {
     if (tempsRechargeGritz > 0)
     {
-        std::cout << "Le Gritz est en recharge.\n";
+        cout << "Le Gritz est en recharge.\n";
     }
     else
     {
@@ -69,7 +71,7 @@ void Quincy::utiliserSklaveti(Personnage* cible)
 {
     if (tempsRechargeSklaveti > 0)
     {
-        std::cout << "Le Sklaveti est en recharge.\n";
+        cout << "Le Sklaveti est en recharge.\n";
     }
     else
     {

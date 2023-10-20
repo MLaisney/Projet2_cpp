@@ -3,6 +3,8 @@
 
 #include "Personnage.hpp"
 
+using namespace std;
+
 // Création de la classe fille Quincy
 class Quincy : public Personnage
 {
@@ -15,7 +17,7 @@ class Quincy : public Personnage
         int tempsRechargeSklaveti;
 
     public:
-        Quincy(std::string nom);
+        Quincy(string nom);
         void attaquer(Personnage *cible);
         void recevoirDegats(int degats);
         void utiliserHeilingPfeil(Personnage* cible);

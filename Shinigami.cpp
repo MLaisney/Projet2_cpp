@@ -3,8 +3,10 @@
 #include <cstdlib>
 #include <ctime>
 
+using namespace std;
+
 // Initialisation des dégats et des temps de recharge des capacités
-Shinigami::Shinigami(std::string nom) : Personnage(nom, 2000)
+Shinigami::Shinigami(string nom) : Personnage(nom, 2000)
 {
     srand(time(0));
     zanpakutoDegats = rand() % 500 + 500;
@@ -23,7 +25,7 @@ void Shinigami::attaquer(Personnage* cible, int capacite)
         case 1: utiliserZanpakuto(cible); break;
         case 2: utiliserShikaie(cible); break;
         case 3: utiliserBankai(cible); break;
-        default: std::cout << "Capacité invalide.\n";
+        default: cout << "Capacité invalide.\n";
     }
 }
 
@@ -39,7 +41,7 @@ void Shinigami::utiliserZanpakuto(Personnage* cible)
 {
     if (tempsRechargeZanpakuto > 0)
     {
-        std::cout << "Le Zanpakuto est en recharge.\n";
+        cout << "Le Zanpakuto est en recharge.\n";
     }
     else
     {
@@ -53,7 +55,7 @@ void Shinigami::utiliserShikaie(Personnage* cible)
 {
     if (tempsRechargeShikaie > 0)
     {
-        std::cout << "Le Shikaie est en recharge.\n";
+        cout << "Le Shikaie est en recharge.\n";
     }
     else
     {
@@ -67,7 +69,7 @@ void Shinigami::utiliserBankai(Personnage* cible)
 {
     if (tempsRechargeBankai > 0)
     {
-        std::cout << "Le Bankai est en recharge.\n";
+        cout << "Le Bankai est en recharge.\n";
     }
     else
     {

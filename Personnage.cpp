@@ -1,6 +1,8 @@
 #include "Personnage.hpp"
 
-Personnage::Personnage(std::string nom, int pointsDeVie) :
+using namespace std;
+
+Personnage::Personnage(string nom, int pointsDeVie) :
 nom(nom), pointsDeVie(pointsDeVie){}
 
 // Fonction pour le retour des points de vie
@@ -10,7 +12,7 @@ bool Personnage::estEnVie()
 }
 
 // Fonction pour initialisation du nom du personnage
-std::string Personnage::getNom()
+string Personnage::getNom()
 {
     return nom;
 }

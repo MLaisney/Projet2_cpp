@@ -3,19 +3,21 @@
 
 #include <string>
 
+using namespace std;
+
 // Création de la classe mère Personnage
 class Personnage
 {
     protected:
-        std::string nom;
+        string nom;
         int pointsDeVie;
 
     public:
-        Personnage(std::string nom, int pointsDeVie);
+        Personnage(string nom, int pointsDeVie);
         virtual void attaquer(Personnage* cible, int degats) = 0;
         virtual void recevoirDegats(int degats) = 0;
         bool estEnVie();
-        std::string getNom();
+        string getNom();
 };
 
 #endif

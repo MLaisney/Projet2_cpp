@@ -3,6 +3,8 @@
 
 #include "Personnage.hpp"
 
+using namespace std;
+
 // Création de la classe fille Shinigami
 class Shinigami : public Personnage
 {
@@ -15,7 +17,7 @@ class Shinigami : public Personnage
         int tempsRechargeBankai;
 
     public:
-        Shinigami(std::string nom);
+        Shinigami(string nom);
         void attaquer(Personnage* cible, int degats); 
         void recevoirDegats(int degats);
         void utiliserZanpakuto(Personnage* cible);
