@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <ctime>
 
+#include "Personnage.hpp"
 #include "Shinigami.hpp"
 #include "Quincy.hpp"
 

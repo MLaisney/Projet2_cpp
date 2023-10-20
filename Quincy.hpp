@@ -28,4 +28,6 @@ class Quincy : public Personnage
         void utiliserSklaveti(Personnage* cible);
 };
 
+#include "Quincy.cpp"
+
 #endif

@@ -15,10 +15,12 @@ class Personnage
 
     public:
         Personnage(string nom, int pointsDeVie);
-        virtual void attaquer(Personnage* cible, int degats) = 0;
-        virtual void recevoirDegats(int degats) = 0;
+        virtual void attaquer(Personnage* cible, int degats);
+        virtual void recevoirDegats(int degats);
         bool estEnVie();
         string getNom();
 };
+
+#include "Personnage.cpp"
 
 #endif

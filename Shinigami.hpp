@@ -28,4 +28,6 @@ class Shinigami : public Personnage
         void utiliserBankai(Personnage* cible);
 };
 
+#include "Shinigami.cpp"
+
 #endif
