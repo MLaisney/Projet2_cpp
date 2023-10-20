@@ -1,8 +1,10 @@
-#include "Shinigami.hpp"
 #include <iostream>
 #include <string>
 #include <cstdlib>
 #include <ctime>
+
+#include "Personnage.hpp"
+#include "Shinigami.hpp"
 
 using namespace std;
 

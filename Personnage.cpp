@@ -2,6 +2,8 @@
 #include <string>
 
 #include "Personnage.hpp"
+#include "Shinigami.hpp"
+#include "Quincy.hpp"
 
 using namespace std;
 

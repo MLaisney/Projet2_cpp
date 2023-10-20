@@ -1,8 +1,10 @@
-#include "Quincy.hpp"
 #include <iostream>
 #include <string>
 #include <cstdlib>
 #include <ctime>
+
+#include "Personnage.hpp"
+#include "Quincy.hpp"
 
 using namespace std;
 
