@@ -48,6 +48,8 @@ int main()
         bool shinigamiEnVie = shinigami.estEnVie();
         bool quincyEnVie = false;
 
+
+
         for (Personnage* quincy : equipeQuincys)
         {
             if (quincy->estEnVie())

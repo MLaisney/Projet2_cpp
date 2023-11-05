@@ -21,3 +21,13 @@ string Personnage::getNom()
 {
     return nom;
 }
+
+void Personnage::recevoirDegats(int degats)
+{
+    pointsDeVie -= degats;
+    if (pointsDeVie < 0) pointsDeVie = 0;
+}
+
+void Personnage::attaquer(Personnage* cible, int capacite) 
+{
+}

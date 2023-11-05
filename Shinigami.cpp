@@ -12,12 +12,12 @@ using namespace std;
 Shinigami::Shinigami(string nom) : Personnage(nom, 2000)
 {
     srand(time(0));
-    zanpakutoDegats = rand() % 500 + 500;
-    shikaieDegats = rand() % 300 + 300;
-    bankaiDegats = rand() % 700 + 700;
-    tempsRechargeZanpakuto = rand() % 4 + 1;
-    tempsRechargeShikaie = rand() % 4 + 1;
-    tempsRechargeBankai = rand() % 4 + 1;
+    zanpakutoDegats = 100;
+    shikaieDegats = 200;
+    bankaiDegats = 500;
+    tempsRechargeZanpakuto = 1;
+    tempsRechargeShikaie = 2;
+    tempsRechargeBankai = 3;
 }
 
 // Choix de la capacité à choisir
